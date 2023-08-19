@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <!-- <div class="loader" id="loader_container" >
+        <img style="border-radius: 50%;" src="images/8CLc.gif" height="300px" width="400px" />
+        <h5 style="font-size: 30px;">Loading...</h5>
+    </div> -->
+
+
+  <div class="" id="my-container" style="width: 100%;">
+
+    <div class="main-head">
+
+      <div style="background-color: blue; height: 40px; width: 100%; margin-top: 0px; margin-left: 2%;">
+        <h4 class="text-white">Personal Blogging App</h4>
+      </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <h2>Dashboard</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <img src="" alt="" style="height: 50px; width: 50px; border: 1px solid rgb(167, 166, 166); border-radius: 50%;" id="nav-img">
+
+        <span id="Name">  </span>
+        <a href="./allblogs.html"> All blogs</a>
+
+        <button class="btn btn-outline-success" id="log-out"> log out</button>
+      </div>
+    </nav>
+
+    <div style="background-color: #f0eeee; padding: 7px; border-radius: 10px; height: 330px;">
+      <input type="text" placeholder="Blog title" id="title" style="width: 100%;">
+
+      <textarea placeholder="what is in your mind" name="" id="textarea" rows="6"
+        style="width: 100%; margin-top: 2%; padding: 1%;">
+      </textarea><hr>
+      <button class="submit-butn" id="Publish-btn"> Publish </button><br>
+    </div>
+
+
+    <div class="my-blogs-content" id="my-blogs-content">
+
+      <h1>My Blogs</h1>
+
+      
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container" id="container">
+
+    <div class="form">
+
+      <h3 class="app-heading"> Signup </h3>
+      <hr>
+
+      <div class="form-content">
+
+        <div class="First">
+
+          <b>Name</b><br>
+          <input type="text" placeholder="Name" id="Name" required>
+
+        </div>
+
+        <div class="Last">
+
+          <b> Father Name</b><br>
+          <input type="text" placeholder="Father Name" id="fatherName" required>
+
+        </div>
+
+      </div>
+
+      <div class="email">
+
+        <b> Email</b><br>
+        <input type="email" placeholder="Enter your email" id="email" required>
+
+      </div>
+
+      <div class="password">
+
+        <b> Password </b><br>
+        <input type="password" placeholder="Enter new password" id="password" required>
+
+      </div>
+
+      <div class="get-img">
+
+        <b> Select image</b><br>
+        <input id="chose-img" type="file">
+      </div>
+
+      <button id="register-btn"> Signup </button>
+      <br><br>
+      <p class="sign">Already signed up? <button class="login" id="log-now-btn">Login now</button> </p>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="login-form" id="login-container">
+
+    <h1 class="app-heading">login</h1>
+    <hr>
+
+
+
+    <div class="email">
+
+      <b> Email</b><br>
+      <input type="email" placeholder="Enter your email" id="login_email">
+
+    </div>
+
+    <div class="password">
+
+      <b> Password </b><br>
+      <input type="password" placeholder="Enter new password" id="login_password">
+
+    </div>
+
+
+
+    <button id="login_btn"> login </button>
+    <br><br>
+    <p class="sign">Not yet registered? <br> <button class="login" id="reg-now-btn">sign up</button> </p>
+
+  </div>
+
+
+
+  <div id="content-container">
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
