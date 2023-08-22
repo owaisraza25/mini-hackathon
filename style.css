@@ -415,4 +415,9 @@ input[type=text] {
     display: flex;
 }
 
+.my-blog-card{
+    min-height: 200ox;
+    width: 70%;
+    background-color: #ccc;
 
+}

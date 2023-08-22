@@ -36,7 +36,7 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
 
-let Name = document.getElementById("Name")
+let Name = document.getElementById("S-Name")
 let FatherName = document.getElementById("fatherName")
 let regContainer = document.getElementById("container")
 let loginContainer = document.getElementById("login-container")
@@ -50,8 +50,7 @@ let logoutBtn = document.getElementById("log-out")
 let userImg = document.getElementById("nav-img")
 let userName = document.getElementById("nav-name")
 let publish_Btn = document.getElementById("Publish-btn")
-let blogTitle = document.getElementById("title").value
-let blogDisc = document.getElementById("textarea").value
+
 
 loginContainer.style.display = "none"
 regContainer.style.display = "none"
@@ -168,7 +167,7 @@ function loginButton() {
 
 onAuthStateChanged(auth, (user) => {
   let userName = document.getElementById("nav-name")
-  let Name = document.getElementById("Name")
+  let Name = document.getElementById("S-Name")
   let choseImg = document.getElementById("chose-img")
 
 
@@ -207,6 +206,9 @@ function logout() {
 function publishBlog() {
 
   let myBlogs = document.getElementById("my-blogs-content")
+  let Name = document.getElementById("S-Name")
+  let blogTitle = document.getElementById("title").value
+  let blogDisc = document.getElementById("textarea").value
 
   
 
@@ -216,15 +218,16 @@ function publishBlog() {
   } else {
     myBlogs.innerHTML = null
     const userBlog = `
-  <div class="card" style="width: 18rem;">
+  <div class="card" my-blog-card style="width: 18rem;">
     <div class="card-body">
     <h5 class="card-title">${blogTitle}</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">${Name}</h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">${Name.value}</h6>
     <p class="card-text">${blogDisc}</p>
 
    </div>
 </div>
 `
+console.log("blogtitle=>",blogTitle)
 myBlogs.innerHTML += userBlog
 
 }
